@@ -83,6 +83,7 @@ SK_C_API void sk_nway_canvas_remove_all(sk_nway_canvas_t* t);
 SK_C_API sk_overdraw_canvas_t* sk_overdraw_canvas_new(sk_canvas_t* canvas);
 SK_C_API void sk_overdraw_canvas_destroy(sk_overdraw_canvas_t* canvas);
 SK_C_API gr_recording_context_t* sk_get_recording_context(sk_canvas_t* canvas);
+SK_C_API sk_surface_t* sk_get_surface(sk_canvas_t* canvas);
 
 SK_C_PLUS_PLUS_END_GUARD
 

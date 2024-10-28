@@ -304,3 +304,7 @@ void sk_overdraw_canvas_destroy(sk_overdraw_canvas_t* canvas) {
 gr_recording_context_t* sk_get_recording_context(sk_canvas_t* canvas) {
     return ToGrRecordingContext(AsCanvas(canvas)->recordingContext());
 }
+
+sk_surface_t* sk_get_surface(sk_canvas_t* canvas) {
+    return ToSurface(AsCanvas(canvas)->getSurface());
+}
